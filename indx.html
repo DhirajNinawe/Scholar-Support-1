@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scholar Support - Fully Functional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Arial+Rounded+MT+Bold&display=swap" rel="stylesheet">
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header" id="site-header">
+        <div class="logo" id="logo-btn">
+            <img src="https://i.ibb.co/ZRgpz3KH/a-logo-design-featuring-the-text-scholar-A6y-DD5u-NTwen-OL8l4-DHOjg-N5-Xs-Tw-YCQz-Qg-ALMEaz-R6-A-rem.png" alt="Scholar Support Logo" />
+        </div>
+        <div class="search-bar-wrapper" id="hero-search-wrapper">
+            <div class="search-bar" id="search-bar-container">
+                <input type="text" id="hero-search-input" placeholder="Search schemes..." autocomplete="off" />
+                <button id="hero-search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.3-4.3" />
+                    </svg>
+                </button>
+            </div>
+            <div class="suggestions-box" id="hero-suggestions"><ul></ul></div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <img src="https://i.ibb.co/ZRgpz3KH/a-logo-design-featuring-the-text-scholar-A6y-DD5u-NTwen-OL8l4-DHOjg-N5-Xs-Tw-YCQz-Qg-ALMEaz-R6-A-rem.png" alt="Scholar Support Logo" class="hero-logo-display" />
+                <div class="hero-headline-text">Welcome!</div>
+                <button class="hero-button">EXPLORE SCHEMES</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Schemes Section (Slide-up panel) -->
+    <section id="schemes-section">
+        <div class="schemes-header">
+             <div class="search-bar-wrapper">
+                <div class="scheme-search-bar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.3-4.3" />
+                    </svg>
+                    <input type="text" id="scheme-search-input" placeholder="Search all schemes..." autocomplete="off"/>
+                </div>
+                <div class="suggestions-box" id="scheme-suggestions"><ul></ul></div>
+            </div>
+        </div>
+       
+        <div class="scheme-categories-container">
+            <!-- Categories and cards here -->
+            <div class="scheme-category">
+                <h2 class="category-title">Schemes for Girls</h2>
+                <div class="schemes-grid">
+                    <div class="scheme-card" data-keywords="technical education girls">
+                        <h3>AICTE Pragati Scholarship for Girls</h3>
+                        <p>Provides financial assistance for the advancement of girls participating in technical education.</p>
+                        <button class="apply-btn">View Details</button>
+                    </div>
+                    <div class="scheme-card" data-keywords="minority community">
+                        <h3>Begum Hazrat Mahal National Scholarship</h3>
+                        <p>For meritorious girl students from minority communities who cannot continue their education due to financial constraints.</p>
+                        <button class="apply-btn">View Details</button>
+                    </div>
+                    <div class="scheme-card" data-keywords="engineering college mentor">
+                        <h3>CBSE Udaan Scheme</h3>
+                        <p>A project by CBSE to mentor girl students to compete for admission in premier engineering colleges.</p>
+                        <button class="apply-btn">View Details</button>
+                    </div>
+                     <div class="scheme-card" data-keywords="maharashtra backward class 5th 10th">
+                        <h3>Savitribai Phule Scholarship (Maharashtra)</h3>
+                        <p>Financial aid for girls from backward classes in standards 5th to 10th to encourage education.</p>
+                        <button class="apply-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scheme-category">
+                <h2 class="category-title">Education Loans</h2>
+                <div class="schemes-grid">
+                    <div class="scheme-card" data-keywords="interest subsidy weaker section">
+                        <h3>Central Sector Interest Subsidy Scheme</h3>
+                        <p>Provides full interest subsidy during the moratorium period on loans for students from economically weaker sections.</p>
+                        <button class="apply-btn">View Details</button>
+                    </div>
+                     <div class="scheme-card" data-keywords="bank loan portal">
+                        <h3>Vidya Lakshmi Portal</h3>
+                        <p>A single-window portal for students to access information and apply for educational loans from various banks.</p>
+                        <button class="apply-btn">View Details</button>
+                    </div>
+                    <div class="scheme-card" data-keywords="overseas studies obc ebc">
+                        <h3>Dr. Ambedkar Central Sector Scheme</h3>
+                        <p>Interest subsidy on educational loans for overseas studies for students belonging to OBC and EBC categories.</p>
+                        <button class="apply-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scheme-category">
+                <h2 class="category-title">Internship Opportunities</h2>
+                <div class="schemes-grid">
+                    <div class="scheme-card" data-keywords="niti aayog policy">
+                        <h3>NITI Aayog Internship Scheme</h3>
+                        <p>An opportunity for young individuals to familiarize themselves with the work of NITI Aayog and contribute to policy formulation.</p>
+                        <button class="apply-btn">View Details</button>
+                    </div>
+                     <div class="scheme-card" data-keywords="swachh bharat village summer">
+                        <h3>Swachh Bharat Summer Internship</h3>
+                        <p>Engages youth across the country in Swachh Bharat related activities at the village level.</p>
+                        <button class="apply-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scheme-category">
+                <h2 class="category-title">Post-Graduate Studies</h2>
+                <div class="schemes-grid">
+                    <div class="scheme-card" data-keywords="single girl child masters degree">
+                        <h3>Post-Graduate Indira Gandhi Scholarship</h3>
+                        <p>For single girl children pursuing full-time Master's degree courses in any designated university or college.</p>
+                        <button class="apply-btn">View Details</button>
+                    </div>
+                    <div class="scheme-card" data-keywords="minorities phd matric">
+                        <h3>Post-Matric Scholarship for Minorities</h3>
+                        <p>For students from minority communities studying in classes 11th to PhD. Provides financial support for their education.</p>
+                        <button class="apply-btn">View Details</button>
+                    </div>
+                     <div class="scheme-card" data-keywords="university rank holder masters">
+                        <h3>PG Scholarship for University Rank Holders</h3>
+                        <p>For undergraduate rank holders to pursue their Master's degree in any of the recognized universities in India.</p>
+                        <button class="apply-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <p id="no-results-message">This scheme is yet to be uploaded on the portal.</p>
+
+        <div class="back-btn-container">
+            <button id="back-to-hero-btn" class="back-btn">← Back to Home</button>
+        </div>
+    </section>
+
+    <!-- Backdrop Overlay -->
+    <div id="backdrop-overlay"></div>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <button class="close-btn" id="close-sidebar-btn">✖</button>
+            <h2>Navigation</h2>
+            <ul>
+                <li><a data-panel="login-panel">🔐 Login</a></li>
+                <li><a data-panel="profile-panel">👤 Your ID</a></li>
+                <li><a data-panel="about-panel">📖 About Us</a></li>
+                <li><a data-panel="help-panel">❓ Help</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Login Panel -->
+    <div class="login-panel panel" id="login-panel">
+        <div class="login-content panel-content">
+            <button class="close-btn" data-panel="login-panel">✖</button>
+            <h2>Login</h2>
+            <form onsubmit="return false">
+                <label for="email">Username or Email</label>
+                <input type="text" id="email" placeholder="Enter email or username" required />
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" required />
+                <button type="button" class="login-btn">Login</button>
+                <div class="login-footer">
+                    <button type="button" class="signup-btn">Sign Up</button>
+                    <button type="button" class="forgot-btn">Forgot Password?</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- YOUR ID Panel -->
+    <div class="panel" id="profile-panel">
+        <div class="panel-content">
+            <button class="close-btn" data-panel="profile-panel">✖</button>
+            <h2>Your ID</h2>
+            <form onsubmit="return false">
+                <label>Name:</label>
+                <input type="text" placeholder="Enter your name" required />
+                <label>Age:</label>
+                <input type="number" placeholder="Enter your age" required />
+                <label>Caste:</label>
+                <input type="text" placeholder="Enter your caste" required />
+                <label>Education:</label>
+                <input type="text" placeholder="Enter education level" required />
+                <label>College Name:</label>
+                <input type="text" placeholder="Enter your college name" required />
+                <label>Annual Income:</label>
+                <input type="number" placeholder="Enter your family's annual income" required />
+                <button type="submit">Save Info</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ABOUT US Panel -->
+    <div class="panel" id="about-panel">
+        <div class="panel-content">
+            <button class="close-btn" data-panel="about-panel">✖</button>
+            <h2>About Us</h2>
+            <p>
+                <strong>Welcome to Scholar Support – Your trusted gateway to student empowerment through government schemes!</strong><br><br>
+                🎯 <strong>Our Mission:</strong><br>
+                To simplify access to government schemes for every student across Maharashtra.<br><br>
+                💡 <strong>Why We Exist:</strong><br>
+                Government schemes offer life-changing benefits — scholarships, fee waivers, skill-building programs — but thousands of students miss out due to lack of awareness. Scholar Support bridges that gap by transforming information into action.<br><br>
+                🚀 <strong>What We Offer:</strong><br>
+                • 🔍 Smart filters to match your needs<br>
+                • 🃏 Interactive cards with key details<br>
+                • 📝 Step-by-step guides for hassle-free applications<br>
+                • 🎓 Desktop-friendly access via Scholar Support<br><br>
+                🛠️ <strong>Meet the Team:</strong><br>
+                • 👨‍💻 Dhiraj Ninawe<br>
+                • 👨‍💼 Dhruv Vishwakarma<br>
+                • 🎨 Amol Rahangdale<br>
+                • 🔧 Govind Sharma<br><br>
+                📣 We're here to give you access to every opportunity that exists.
+            </p>
+        </div>
+    </div>
+
+    <!-- HELP PANEL -->
+    <div class="panel" id="help-panel">
+        <div class="panel-content">
+            <button class="close-btn" data-panel="help-panel">✖</button>
+            <h2>Help Desk</h2>
+            <p>
+                💬 <strong>Ask Us Anything:</strong><br>
+                Whether you're unsure about eligibility, documents, or how to apply — just reach out.<br><br>
+                📩 <strong>Contact Support:</strong><br>
+                • 📧 Email: support@scoller.in<br>
+                • 📞 WhatsApp: +91 91234 56789<br><br>
+                🚀 <strong>Quick Tools:</strong><br>
+                • 🧾 Application Checklists<br><br>
+                🤝 We're here to help you take action confidently.
+            </p>
+        </div>
+    </div>
+
+    <!-- Link to your external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
